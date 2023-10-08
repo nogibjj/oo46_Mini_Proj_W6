@@ -2,7 +2,6 @@
 
 """
 from mylib.query import query
-import pandas as pd
 import matplotlib.pyplot as plt
 
 

@@ -5,7 +5,6 @@ Test goes here
 from mylib.query import query
 from mylib.mydbconn import setConn
 from main import main
-from pandas._testing import assert_frame_equal
 import unittest
 
 
