@@ -9,7 +9,7 @@ def main():
     # Load data
     myresults = query()
 
-    # Prepare and plot top sales by car make chart
+    # Plot the data
     fig, ax = plt.subplots(figsize=(15, 10))
 
     ax.bar(
@@ -33,9 +33,9 @@ def main():
         "Top 10 Customers with the Highest Total Purchase Amounts",
         loc="left",
     )
-    ax.set_xlabel("Total Purchase Amounts")
-    ax.set_ylabel("Company Name")
-
+    ax.set_xlabel("Company Name")
+    ax.set_ylabel("Total Purchase Amounts")
+    
     plt.savefig("top.png")
     plt.show()
 
