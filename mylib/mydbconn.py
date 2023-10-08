@@ -16,5 +16,5 @@ def setConn():
 
     conn_string = 'Driver={ODBC Driver 18 for SQL Server};Server='+SERVER+',1433;Database='+DATABASE+';Uid='+USERNAME+';Pwd='+PASSWORD+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
     myConn = odbc.connect(conn_string)
-    return myConn
+    return myConn, "Success"
 

@@ -36,7 +36,7 @@ def query():
         TotalPurchaseAmount DESC;
 
     """
-    cursor = conn.cursor()
+    cursor = conn[0].cursor()
     cursor.execute(sql_query)
     data = cursor.fetchall()
     columns = [column[0] for column in cursor.description]

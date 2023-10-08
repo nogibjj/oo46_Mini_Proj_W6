@@ -19,7 +19,7 @@ container-lint:
 
 refactor: format lint
 
-run:
-	python main.py
+# run:
+# 	python main.py
 		
-all: install lint test format deploy
+all: install lint test format refactor
