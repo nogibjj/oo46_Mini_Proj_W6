@@ -1,5 +1,6 @@
 """
-Connect to an Azure Sql Server database and return a connection object.
+Connects to an Azure Sql Server database and returns a connection object
+along with a "success" message string.
 """
 import os
 import pypyodbc as odbc

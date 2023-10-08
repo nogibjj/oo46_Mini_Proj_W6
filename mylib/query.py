@@ -1,5 +1,12 @@
-"""A complex SQL query using the Northwind database that retrieves
-   the top 10 customers with the highest total purchase amounts.
+""" 
+    This module does the following:
+    1. This module relies on the mydbconn module to connect to the Northwind 
+    database.
+    
+    2. It then performs a complex SQL query that retrieves
+    the top 10 customers with the highest total purchase amounts.
+    
+    3. Finally, it returns the results as a Pandas DataFrame.
  """
 import pandas as pd
 from mylib.mydbconn import setConn
