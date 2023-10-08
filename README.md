@@ -21,16 +21,14 @@
 
 ## Mini-project deliverables:
 
-### Entity Relationship Diagram of Northwind Database
+### Entity Relationship Diagram of Northwind Database:
 
 ![ERD](erd.png)
 
 ### Application output:
-
 ![Output](top.png)
 
 ### Testing outcome:
-
 ![Test](test.png)
 
 [def]: https://github.com/nogibjj/oo46_Mini_Proj_W6/actions/workflows/cicd.yml
