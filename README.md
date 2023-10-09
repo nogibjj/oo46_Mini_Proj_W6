@@ -6,7 +6,7 @@
 
 1. All dependencies needed for execution can be found in the [requirement.txt](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/requirements.txt) file.
 
-2. The main purpose of this application is to [connect](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/mylib/mydbconn.py) to an Azure Sql Server database (online) and perform some [complex sql query](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/mylib/query.py).
+2. The main purpose of this application is to [connect](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/mylib/mydbconn.py) remotely to an Azure Sql Server database and perform some [complex sql query](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/mylib/query.py).
 
    - The complex SQL query uses the Northwind sample database and retrieves the top N = 10 customers with the highest total purchase amounts. You can adjust the value of N as needed.
    - In this query:
@@ -15,9 +15,9 @@
 
      2. It then assigns a rank to each customer based on their total purchase amount using the ROW_NUMBER() window function.
 
-     3. The main query selects the top N customers with the highest total purchase amounts from the RankedCustomers CTE, where N is a parameter you can adjust.
+     3. The main query then selects the top N customers with the highest total purchase amounts from the RankedCustomers CTE, where N is a parameter you can adjust.
 
-     This query will give you a list of the top N customers with the highest total purchase amounts in the Northwind database, and it's applicable to databases with similar schema structure.
+     This query will give you a list of the top N customers with the highest total purchase amounts in the Northwind database, and it is applicable to databases with similar schema structure.
 
 ## Mini-project deliverables:
 
@@ -26,9 +26,11 @@
 ![ERD](erd.png)
 
 ### Application output:
+
 ![Output](top.png)
 
 ### Testing outcome:
+
 ![Test](test.png)
 
 [def]: https://github.com/nogibjj/oo46_Mini_Proj_W6/actions/workflows/cicd.yml
