@@ -1,5 +1,8 @@
 """
-
+This module is the main module of the project. It calls the query function
+ from the query module to get the data from the database. Then, it plots the
+   data and saves the plot as a png file. Finally, it returns a string "Success"
+     to indicate that the program has run successfully.
 """
 from mylib.query import query
 import matplotlib.pyplot as plt
@@ -35,7 +38,7 @@ def main():
     )
     ax.set_xlabel("Company Name")
     ax.set_ylabel("Total Purchase Amounts")
-    
+
     plt.savefig("top.png")
     plt.show()
 

@@ -21,6 +21,28 @@
 
 ## Mini-project deliverables:
 
+1. [Remote Connection Module](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/mylib/mydbconn.py) => This module securely connects to an Azure SQL Server database in the cloud and returns a connection object along with a "success" message string. It relies on environment variables (Server Name, Database, User Name, Password) for this connection.
+
+2. [SQL Query Module](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/mylib/query.py) => The query module does the following:
+
+   1. It relies on the mydbconn module to connect to the Northwind
+      database.
+
+   2. It then performs a complex SQL query that retrieves
+      the top 10 customers with the highest total purchase amounts.
+
+   3. Finally, it returns the results as a Pandas DataFrame.
+
+3. [Main App Module](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/main.py) => This module can be thought of as the main entry point to the application.
+
+   1. It calls the query function from the query module to get the data from the database.
+
+   2. Then, it plots the data and saves the plot as a png file.
+
+   3. Finally, it returns a string "Success" to indicate that the program has run successfully.
+
+4. [Testing Module](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/test_main.py) => This module is used to test the functionality of the above modules. Its output is displayed [here](https://github.com/nogibjj/oo46_Mini_Proj_W6/blob/main/test.png)
+
 ### Entity Relationship Diagram of Northwind Database:
 
 ![ERD](erd.png)
