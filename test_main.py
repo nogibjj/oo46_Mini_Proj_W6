@@ -1,5 +1,5 @@
 """
-This module does the following:
+The test main module does the following:
 1. The connection to the database server function is tested here.
 2. It also tests the query function in the mylib/query.py module.
 3. It finally tests the main function in the main.py module.

@@ -1,6 +1,6 @@
 """ 
-    This module does the following:
-    1. This module relies on the mydbconn module to connect to the Northwind 
+    The query module does the following:
+    1. It relies on the mydbconn module to connect to the Northwind 
     database.
     
     2. It then performs a complex SQL query that retrieves
